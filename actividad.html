@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://www.burgerfi.com/wp-content/uploads/2025/01/classic-meat-burger-with-fries-scaled.webp"
+<title>Mi Favorito</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #FDF6EC;
+    text-align: center;
+    padding: 30px;
+    color: #333333;
+  }
+
+  h1 {
+    color: #D35400;
+    font-size: 2em;
+  }
+
+  p.intro {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .tarjeta {
+    background-color: white;
+    border: 3px solid #F5CBA7;
+    border-radius: 12px;
+    padding: 15px;
+    width: 160px;
+  }
+
+  .tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .tarjeta p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #A9A9A9;
+  }
+</style>
+</head>
+<body>
+
+<h1>¿Cuál es tu comida favorita?</h1>
+<p class="intro">Mira las opciones y elige la que más te guste</p>
+
+<div class="galeria">
+  <div class="tarjeta">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ZNVFLDhCCq16vmXQqERkmn827qJGAjgtMzVfK-CYjw&s=10" alt="Pizza">
+    <button onclick="miFunc()">Haz clic aquí</button>
+    <p>Pizza</p>
+  </div>
+  <div class="tarjeta">
+    <img src="https://www.burgerfi.com/wp-content/uploads/2025/01/classic-meat-burger-with-fries-scaled.webp" alt="Hamburguesa">
+    <button onclick="miFunc()">Haz clic aquí</button>
+    <p>Hamburguesa</p>
+  </div>
+  <div class="tarjeta">
+    <button onclick="miFunc()">Haz clic aquí</button>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlaSimWlK2ewg9W0k7S60R5qUB6h3CgslRqrtiOCum9A&s=10" alt="Sushi">
+    <p>Sushi</p>
+  </div>
+  <div class="tarjeta">
+    <button onclick="miFunc()">Haz clic aquí</button>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwMwU2r8SzlOCQdWsRAgkNMfuzZ3g_MrmCzNrkroWaJw&s=10" alt="Tacos">
+    <p>Tacos</p>
+  </div>
+  <div class="tarjeta">
+    <button onclick="miFunc()">Haz clic aquí</button>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Fx1HeCutO6n0QbDEitMjctRrZOJJqRQcg9tQrYh9XA&s=10" alt="Helado">
+    <p>Helado</p>
+  </div>
+  <div class="tarjeta">
+    <button onclick="alert('Seleccionaste esto');">
+        Seleccionaste esto Ensalada</button>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoZl6-iYvJ3YGxcXSL3NejREr6QcM8e-vfZp4HgkPOUA&s=10" alt="Ensalada">
+    <p>Ensalada</p>
+  </div>
+</div>
+
+<footer>
+  <p>Página hecha por Juan Pablo</p>
+</footer>
+
+
+<script>
+    var productos = [
+        { id:1,nombre:"mouse",precio:"200",categoria:"electronica"},
+        { id:2,nombre:"camisa",precio:"400",categoria:"ropa"},
+        { id:3,nombre:"cascos",precio:"320",categoria:"electronica"},
+        { id:4,nombre:"cama",precio:"700",categoria:"mueble"},
+        { id:5,nombre:"escritorio",precio:"620",categoria:"mueble"},
+
+     function vender(){
+       const productos.filter(a=>a.categoria="electronica");
+       const productos.filter(a=>a.categoria="ropa");
+       const productos.filter(a=>a.categoria="mueble");
+
+       const nombresElectronicos = electronicos.map(({nombre}) => nombre.toUpperCase());
+
+       console.log(nombresElectronicos);
+       }
+
+
+
+
+       
+</script>
+
+</body>
+</html>
