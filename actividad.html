@@ -107,26 +107,27 @@
 
 <script>
     var productos = [
-        { id:1,nombre:"mouse",precio:"200",categoria:"electronica"},
-        { id:2,nombre:"camisa",precio:"400",categoria:"ropa"},
-        { id:3,nombre:"cascos",precio:"320",categoria:"electronica"},
-        { id:4,nombre:"cama",precio:"700",categoria:"mueble"},
-        { id:5,nombre:"escritorio",precio:"620",categoria:"mueble"},
+    { id: 1, nombre: "mouse", precio: 200, categoria: "electronica" },
+    { id: 2, nombre: "camisa", precio: 400, categoria: "ropa" },
+    { id: 3, nombre: "cascos", precio: 320, categoria: "electronica" },
+    { id: 4, nombre: "cama", precio: 700, categoria: "mueble" },
+    { id: 5, nombre: "escritorio", precio: 620, categoria: "mueble" }
+];
 
-     function vender(){
-       const productos.filter(a=>a.categoria="electronica");
-       const productos.filter(a=>a.categoria="ropa");
-       const productos.filter(a=>a.categoria="mueble");
+function vender(){
+    const productosFiltrados = productos.filter(a => a.categoria === "electronica");
 
-       const nombresElectronicos = electronicos.map(({nombre}) => nombre.toUpperCase());
+    const nombresMayusculas = productosFiltrados.map(({ nombre }) => nombre.toUpperCase());
 
-       console.log(nombresElectronicos);
-       }
+    const total = productos.reduce((acumulado, a) => acumulado + a.precio, 0);
 
+    console.log("Productos filtrados:", productosFiltrados);
+    console.log("Nombres en mayúsculas:", nombresMayusculas);
+    console.log("Precio total:", total);
+}
 
-
-
-       
+vender();
+  
 </script>
 
 </body>
